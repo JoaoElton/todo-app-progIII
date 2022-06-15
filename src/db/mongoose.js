@@ -1,7 +1,5 @@
 const mongoose = require('mongoose');
 
-const MONGO_URI = process.env.MONGO_URI || 'mongodb://localhost/test';
-
-mongoose.connect(MONGO_URI, {
-  useNewUrlParser: true,
+mongoose.connect("mongodb://localhost:27017/task-manager-api", {
+  useNewUrlParser: true
 });
